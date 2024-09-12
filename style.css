@@ -1,0 +1,75 @@
+@font-face {
+    font-family: chronicle;
+    src: url(./fonts/chronicle.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-family: "chronicle",sans-serif;
+}
+
+.arrow-down{
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    bottom: 30px;
+    cursor: pointer;
+    height: 50px;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    width: 200px;
+}
+
+.logo{
+    position: fixed;
+    z-index: 100;
+    width: 90%;
+    top: 0;
+    left: 40%;
+    /* padding: 48px 0 5px; */
+    background: transparent;
+    /* transition: background 0s; */
+    text-align: center;
+}
+
+.logo-slider {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 300px; /* Visible area of the slider */
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+  }
+  
+  /* Logo Slide Wrapper */
+  
+  
+  /* Logos */
+  .logo-slide img {
+    width: 100px; /* Adjust the logo size */
+    height: auto;
+    margin: 20px 0; /* Space between logos */
+  }
+
+  .vertical-scroll{
+    width: 100%;
+    display: block;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-bottom: calc(var(--vmix)* 6.66); */
+    padding: 0;
+  }
