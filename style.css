@@ -117,4 +117,7 @@ html {
     .vertical-scroll li svg{
         width: 120px;
     }
+    .arrow-down{
+        bottom: 50px;
+    }
 }
