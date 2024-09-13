@@ -102,5 +102,15 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   /* margin-bottom: calc(var(--vmix)* 6.66); */
-  padding: 0;
+  padding: 0 15%;
+}
+
+.vertical-scroll li svg{
+    width: 200px;
+}
+
+@media (max-width:640px) {
+    .vertical-scroll li svg{
+        width: 120px;
+    }
 }

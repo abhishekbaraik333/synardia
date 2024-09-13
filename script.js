@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create GSAP animation
     gsap.to(slideContainer, {
       y: `-${slideContainer.scrollHeight / 2}px`, // Move half the container height upwards
-      duration: 200, // Adjust the speed of the animation
+      duration:250, // Adjust the speed of the animation
       ease: 'none', // Linear animation
       repeat: -1, // Infinite loop
     });
