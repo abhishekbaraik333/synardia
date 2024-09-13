@@ -1,75 +1,106 @@
 @font-face {
-    font-family: chronicle;
-    src: url(./fonts/chronicle.woff2);
+  font-family: chronicle;
+  src: url(./fonts/chronicle.woff2);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body,html{
-    height: 100%;
-    width: 100%;
+body,
+html {
+  height: 100%;
+  width: 100%;
 }
 
-h1{
-    font-family: "chronicle",sans-serif;
-}
+#fullpage .section {
+    height: 100vh; /* Full-page sections should take the full viewport height */
+  }
 
-.arrow-down{
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    bottom: 30px;
-    cursor: pointer;
-    height: 50px;
-    left: 50%;
-    margin: 0 0 0 -100px;
-    width: 200px;
-}
-
-.logo{
+#loader {
     position: fixed;
-    z-index: 100;
-    width: 90%;
     top: 0;
-    left: 40%;
-    /* padding: 48px 0 5px; */
-    background: transparent;
-    /* transition: background 0s; */
-    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure loader is on top */
+  }
+  
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+h1 {
+  font-family: "chronicle", sans-serif;
+}
+
+
+.arrow-down {
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  bottom: 30px;
+  cursor: pointer;
+  height: 50px;
+  left: 50%;
+  margin: 0 0 0 -100px;
+  width: 200px;
+}
+
+.logo {
+    width: 300px;
+  position: fixed;
+  z-index: 100;
+  top: -5%;
+  left: 37%;
+  background: transparent;
+  text-align: center;
 }
 
 .logo-slider {
-    position: relative;
-    width: 100%; /* Adjust as needed */
-    height: 300px; /* Visible area of the slider */
-    overflow: hidden;
-    /* border: 1px solid #ccc; */
-  }
-  
-  /* Logo Slide Wrapper */
-  
-  
-  /* Logos */
-  .logo-slide img {
-    width: 100px; /* Adjust the logo size */
-    height: auto;
-    margin: 20px 0; /* Space between logos */
-  }
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  height: 300px; /* Visible area of the slider */
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+}
 
-  .vertical-scroll{
-    width: 100%;
-    display: block;
-    /* margin: 0 auto; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-bottom: calc(var(--vmix)* 6.66); */
-    padding: 0;
-  }
+/* Logo Slide Wrapper */
+
+/* Logos */
+.logo-slide img {
+  width: 100px; /* Adjust the logo size */
+  height: auto;
+  margin: 20px 0; /* Space between logos */
+}
+
+.vertical-scroll {
+  width: 100%;
+  display: block;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-bottom: calc(var(--vmix)* 6.66); */
+  padding: 0;
+}

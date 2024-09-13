@@ -1,13 +1,27 @@
+window.addEventListener('load', function() {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('content');
+  
+  // Fade out the loader and display the content
+  loader.style.opacity = '0';
+  
+  // Give the loader some time to fade out before removing it
+  setTimeout(() => {
+    loader.style.display = 'none';
+    content.classList.remove('hidden'); // Show the main content
+    content.style.opacity = '1';        // Fade in the main content
+  }, 500); // Adjust the time as needed to match your design
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     new fullpage('#fullpage', {
-      anchors: ['section1', 'section2', 'section3', 'section4'], // Section anchors for URL
+      anchors: ['section1', 'section2', 'section3', 'section4','section5'], // Section anchors for URL
       scrollingSpeed: 700, // Smooth scrolling speed
       scrollOverflow: true, // Enable scroll for overflowing content in sections
-      responsiveWidth: 900, // FullPage.js disables auto scrolling below this width
-      responsiveHeight: 600 // FullPage.js disables auto scrolling below this height
     });
   });
-  
+
 
   document.addEventListener('DOMContentLoaded', function() {
     // Select the logo slide container
