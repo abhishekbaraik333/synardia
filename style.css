@@ -273,6 +273,87 @@ html {
   width: 300px;
 }
 
+
+.neumorphic {
+  background: #ffffff; /* White background */
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.knob {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Shadow with hex color #EC9784, dynamically adjusted */
+  box-shadow: 10px 10px 20px #d4d4d4, -10px -10px 20px rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.5s ease-in-out;
+}
+
+/* Volume Text Styling */
+.volume-text {
+  position: absolute;
+  top: 50%;
+  right: -120px; /* Increased spacing */
+  transform: translateY(-50%);
+}
+
+.neumorphic-text {
+  color: #333333; /* Darker text for contrast */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.1em; /* Slight letter spacing for clean look */
+}
+
+#play-pause-btn {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  /* background-color: #333333; */
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Play button style */
+.play-btn::before {
+  content: '';
+  position: absolute;
+  /* left: 40px; */
+  /* margin-right: 20px; */
+  top: 20px;
+  width: 0;
+  height: 0;
+  filter: invert(1);
+  /* background-color: #000; */
+  border-left: 20px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+/* Pause button style */
+.pause-btn::before, .pause-btn::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 30px;
+  top: 22px;
+}
+
+.pause-btn::before {
+  left: 24px;
+}
+
+.pause-btn::after {
+  left: 45px;
+}
+
 @media (max-width: 640px) {
   .vertical-scroll li svg {
     width: 120px;
