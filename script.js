@@ -14,42 +14,56 @@ window.addEventListener('load', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    new fullpage('#fullpage', {
-      anchors: ['section1', 'section2', 'section3', 'section4','section5','section6','section7','section8'], // Section anchors for URL
-      scrollingSpeed: 1000, // Smooth scrolling speed
-      scrollOverflow: true, // Enable scroll for overflowing content in sections
-      // loopBottom:true
-    });
+// document.addEventListener('DOMContentLoaded', function() {
+//     new fullpage('#fullpage', {
+//       anchors: ['section1', 'section2', 'section3', 'section4','section5','section6','section7','section8'], // Section anchors for URL
+//       scrollingSpeed: 1000, // Smooth scrolling speed
+//       scrollOverflow: true, // Enable scroll for overflowing content in sections
+//     });
 
-    document.getElementById('arrow-down1').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down2').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down3').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down4').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down5').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down6').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down7').addEventListener('click', function() {
-      fullpage_api.moveSectionDown();
-    });
-    document.getElementById('arrow-down8').addEventListener('click', function() {
-      fullpage_api.moveTo(1);
-    });
+//     document.getElementById('arrow-down1').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down2').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down3').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down4').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down5').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down6').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down7').addEventListener('click', function() {
+//       fullpage_api.moveSectionDown();
+//     });
+//     document.getElementById('arrow-down8').addEventListener('click', function() {
+//       fullpage_api.moveTo(1);
+//     });
 
-  });
+//   });
 
-  
+
+gsap.to(".circle-2", {
+  scale: 1.2,        // Scale up to 120%
+  duration: 2,       // Duration for the animation
+  ease: 'power1.inOut', // Smooth easing in and out
+  repeat: -1,        // Infinite repeat
+  yoyo: true         // Reverse the animation to scale down
+});
+
+gsap.to(".circle-1", {
+  scale: 1.2,        // Scale up to 120%
+  duration: 2,       // Duration for the animation
+  ease: 'power1.inOut', // Smooth easing in and out
+  repeat: -1,        // Infinite repeat
+  yoyo: true         // Reverse the animation to scale down
+});
 
   document.addEventListener('DOMContentLoaded', function() {
     // Select the logo slide container
