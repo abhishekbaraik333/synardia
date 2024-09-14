@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  color: #333333;
 }
 
 body,
@@ -125,12 +126,16 @@ html {
 
 .right-arrow .arrow-2 {
   right: 40%;
+  top: 45%;
   position: absolute;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  color: #333333;
 }
 
 .right-arrow .arrow-1 {
   left: -30%;
+  top: 45%;
+  color: #333333;
   position: absolute;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
