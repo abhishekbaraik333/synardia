@@ -25,19 +25,23 @@
         <div class="spinner"></div>
     </div>
 
-    <div class="bottom-5 left-5 z-[10] fixed flex items-center">
+    <div class=" bottom-2 left-3 lg:bottom-5 lg:left-5 z-[10] flex gap-5 fixed items-center">
         <!-- Volume Knob with Neumorphism -->
         <div id="knob" class="knob neumorphic cursor-pointer">
-            <button id="play-pause-btn" class="play-btn"></button>
-
+            <div class="meter w-[2px] h-1  lg:h-3 bg-zinc-300 absolute top-2"></div>
         </div>
 
         <!-- Volume Control Text with more spacing -->
-        <div class="volume-text text-center text-lg neumorphic-text">
-          <div>-</div>
-          <div class="text-2xl mt-2 mb-2">VOLUME</div>
-          <div>+</div>
+        <div class="volume-text text-center text-sm lg:text-lg neumorphic-text">
+            <div>-</div>
+            <div class="text-sm lg:text-xl lg:mt-2 lg:mb-2">VOLUME</div>
+            <div>+</div>
         </div>
+        <button id="play-pause-btn" >
+            <img src="./images/play.svg" id="play-btn" class=" w-[20px]" alt="">
+            <img src="./images/pause.svg" id="pause-btn"  class="w-[20px] hidden" alt="">
+
+        </button>
     </div>
 
     <audio id="audio" loop>
@@ -92,41 +96,45 @@
                     </div>
                     <div class="bento">
                         <div class="news news1">
-                            <p class="news-date"> 
+                            <p class="news-date">
                                 12th Aug 2024 <br>
                                 Press Release
                             </p>
                             <p class="news-content">
-                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA 
+                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
                         </div>
-                        <div class="news news2"><p class="news-date"> 
+                        <div class="news news2">
+                            <p class="news-date">
                                 12th Aug 2024 <br>
                                 Press Release
                             </p>
                             <p class="news-content">
-                                Ultima Capital SA announces Annual General Meeting 2024 results: shareholders approve most of the motions
-                            </p>
-                            <img src="./images/arrow.svg" class="news-arrow" alt="">
-
-                        </div>
-                        <div class="news news3"><p class="news-date"> 
-                                12th Aug 2024 <br>
-                                Press Release
-                            </p>
-                            <p class="news-content">
-                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA 
+                                Ultima Capital SA announces Annual General Meeting 2024 results: shareholders approve
+                                most of the motions
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
 
                         </div>
-                        <div class="news news4"><p class="news-date"> 
+                        <div class="news news3">
+                            <p class="news-date">
                                 12th Aug 2024 <br>
                                 Press Release
                             </p>
                             <p class="news-content">
-                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA 
+                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA
+                            </p>
+                            <img src="./images/arrow.svg" class="news-arrow" alt="">
+
+                        </div>
+                        <div class="news news4">
+                            <p class="news-date">
+                                12th Aug 2024 <br>
+                                Press Release
+                            </p>
+                            <p class="news-content">
+                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
                         </div>

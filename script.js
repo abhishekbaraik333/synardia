@@ -143,7 +143,7 @@ function updateKnobRotation(rotation) {
 }
 
 function updateVolumeBasedOnRotation(rotation) {
-  const volume = (rotation + 135) / 270; // Normalize rotation to volume (0-1)
+  const volume = (rotation + 135) / 200; // Normalize rotation to volume (0-1)
   audio.volume = volume;
 }
 
@@ -162,21 +162,22 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   const audio = document.getElementById("audio");
-  const playPauseBtn = document.getElementById("play-pause-btn");
+  const playBtn = document.getElementById("play-btn");
+  const pauseBtn = document.getElementById("pause-btn");
 
-  // Event listener to toggle play/pause
-  playPauseBtn.addEventListener("click", function() {
-    if (audio.paused) {
-      audio.play();
-      playPauseBtn.classList.remove("play-btn");
-      playPauseBtn.classList.add("pause-btn");
-    } else {
-      audio.pause();
-      playPauseBtn.classList.remove("pause-btn");
-      playPauseBtn.classList.add("play-btn");
-    }
+  // Event listener for Play button
+  playBtn.addEventListener("click", function() {
+    audio.play();
+    playBtn.classList.add("hidden");  // Hide Play button
+    pauseBtn.classList.remove("hidden"); // Show Pause button
+  });
+
+  // Event listener for Pause button
+  pauseBtn.addEventListener("click", function() {
+    audio.pause();
+    pauseBtn.classList.add("hidden"); // Hide Pause button
+    playBtn.classList.remove("hidden"); // Show Play button
   });
 });
