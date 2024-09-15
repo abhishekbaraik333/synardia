@@ -128,7 +128,7 @@ html {
 
 .news-content{
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .news:hover .news-date{
@@ -416,5 +416,12 @@ html {
   }
   .circle{
     width: 150px;
+  }
+  .news{
+    gap: 5px;
+  }
+
+  .news-content{
+    font-size: 14px;
   }
 }
