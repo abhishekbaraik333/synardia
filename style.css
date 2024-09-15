@@ -327,7 +327,7 @@ html {
   justify-content: center;
   align-items: center;
   /* Shadow with hex color #EC9784, dynamically adjusted */
-  box-shadow: 10px 10px 20px #d4d4d4, -10px -10px 20px rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px 20px #EC9784, -10px -10px 20px rgba(255, 255, 255, 0.7);
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.5s ease-in-out;
 }
 

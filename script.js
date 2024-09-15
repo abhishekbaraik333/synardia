@@ -139,7 +139,7 @@ function updateKnobRotation(rotation) {
   const shadowOffsetX = 10 + rotation / 10;
   const shadowOffsetY = 10 + rotation / 10;
   knob.style.transform = `rotate(${rotation}deg)`;
-  knob.style.boxShadow = `${shadowOffsetX}px ${shadowOffsetY}px 20px #d4d4d4, -10px -10px 20px rgba(255, 255, 255, 0.7)`;
+  knob.style.boxShadow = `${shadowOffsetX}px ${shadowOffsetY}px 20px #EC9784, -10px -10px 20px rgba(255, 255, 255, 0.7)`;
 }
 
 function updateVolumeBasedOnRotation(rotation) {
