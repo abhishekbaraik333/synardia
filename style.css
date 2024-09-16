@@ -43,6 +43,11 @@ html {
   animation: spin 1.5s linear infinite;
 }
 
+.video-bg{
+  background-position: center;
+  scale: 1.5;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -51,6 +56,7 @@ html {
     transform: rotate(360deg);
   }
 }
+
 
 .arrow-down {
   flex-wrap: wrap;
@@ -265,10 +271,9 @@ html {
 
 .logo {
   width: 300px;
-  position: fixed;
+  position: absolute;
   z-index: 100;
-  top: -5%;
-  left: 37%;
+  left: 47%;
   background: transparent;
   text-align: center;
 }

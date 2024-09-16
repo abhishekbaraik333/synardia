@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.getElementById("video");
+
+  // Create an IntersectionObserver
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // If the video is in the viewport, play it
+        video.play();
+      } else {
+        // If the video is out of the viewport, pause it
+        video.pause();
+      }
+    });
+  }, {
+    threshold: 0.1 // Adjust as needed, 0.5 means 50% of the video must be visible
+  });
+
+  // Observe the video element
+  observer.observe(video);
+});
+
+
+
 window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
   const content = document.getElementById("content");
