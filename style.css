@@ -302,7 +302,6 @@ html {
     width: 50px;
     left: 42%;
 }
-
   .vertical-scroll li svg {
     width: 120px;
   }
@@ -319,11 +318,21 @@ html {
   .card-para {
     font-size: 12px;
   }
+
   .right-arrow i {
-    scale: 2;
+    scale: 1.5;
+  }
+
+  .right-arrow .arrow-2 {
+    position: absolute;
+    top: 38% ;
+  }
+  .right-arrow .arrow-1 {
+    position: absolute;
+    top: 38% ;
   }
   .right-arrow {
-    padding: 50px;
+    padding: 30px;
   }
   .circle {
     width: 150px;
