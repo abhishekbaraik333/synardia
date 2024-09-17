@@ -91,20 +91,15 @@
             <div class="h-full w-full flex flex-col justify-between items-start py-[20px] lg:py-0">
                 <h1 class="text-[24px] md:text-[48px] font-bold">NEWSROOM</h1>
                 <div class="flex flex-col md:flex-row justify-between w-full mt-6">
-                    <div
-                        class=" text-[20px] lg:text-[48px] flex md:flex-col gap-5 justify-center md:justify-start items-start flex-wrap">
-                        <h5 class="opacity-80 links">
-                            All
-                        </h5>
-                        <h5 class="text-black links">
-                            News
-                        </h5>
-                        <h5 class="text-black links">
-                            Press Release
-                        </h5>
+                    <!-- Filter buttons -->
+                    <div class=" text-[20px] lg:text-[48px] flex md:flex-col gap-5 justify-center md:justify-start items-start flex-wrap">
+                        <h5 class="opacity-80 links" data-category="all">All</h5>
+                        <h5 class="text-black links" data-category="news">News</h5>
+                        <h5 class="text-black links" data-category="press-release">Press Release</h5>
                     </div>
-                    <div class="bento">
-                        <div class="news news1">
+                    <!-- News items -->
+                    <div class="bento" id="news-container">
+                        <div class="news news1" data-category="press-release">
                             <p class="news-date">
                                 12th Aug 2024 <br>
                                 Press Release
@@ -114,36 +109,33 @@
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
                         </div>
-                        <div class="news news2">
+                        <div class="news news2" data-category="press-release">
                             <p class="news-date">
                                 12th Aug 2024 <br>
                                 Press Release
                             </p>
                             <p class="news-content">
-                                Ultima Capital SA announces Annual General Meeting 2024 results: shareholders approve
-                                most of the motions
+                                Ultima Capital SA announces Annual General Meeting 2024 results: shareholders approve most of the motions
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
-
                         </div>
-                        <div class="news news3">
+                        <div class="news news3" data-category="news">
                             <p class="news-date">
-                                12th Aug 2024 <br>
-                                Press Release
+                                10th Aug 2024 <br>
+                                News
                             </p>
                             <p class="news-content">
-                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA
+                                ULTIMA CAPITAL SA has announced its new strategic investment plan for 2024.
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
-
                         </div>
-                        <div class="news news4">
+                        <div class="news news4" data-category="news">
                             <p class="news-date">
-                                12th Aug 2024 <br>
-                                Press Release
+                                11th Aug 2024 <br>
+                                News
                             </p>
                             <p class="news-content">
-                                Minutes of the Annual General Meeting 2024 of ULTIMA CAPITAL SA
+                                ULTIMA CAPITAL SA releases their 2024 market report.
                             </p>
                             <img src="./images/arrow.svg" class="news-arrow" alt="">
                         </div>
@@ -157,6 +149,7 @@
                 </div>
             </div>
         </div>
+        
 
         <div class="section px-4 py-16 lg:py-0 lg:px-[5%]" style="background-color: #fff;">
             <div class="h-full w-full flex flex-col justify-between items-start">

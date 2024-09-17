@@ -215,6 +215,28 @@ video {
   grid-row: span 2;
 }
 
+.links.active {
+  color: #a4a6a8; /* Example: blue color for active button */
+}
+
+/* Basic styling for news items */
+.news {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none; /* Initially hidden */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  display: block; /* Ensure the item is visible when it fades in */
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
 
 
 .links {
